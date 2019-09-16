@@ -12,4 +12,7 @@ How to use:
 
 2- Open terminal run:
 
-`./hdfToCsv("inputfile","output.directory")`
+`./hdf2Csv("inputfile","output.directory")`
+
+
+3- You can find the "values" and "attribute" in the output directory.

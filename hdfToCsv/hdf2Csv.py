@@ -18,7 +18,7 @@ def format(data):
     return(csvfmt,data)
 
 
-def  hdfTocsv(filename, outdir):
+def  hdf2Csv(filename, outdir):
     
     try:
         f = h5py.File(filename, 'r')
@@ -54,8 +54,3 @@ def  hdfTocsv(filename, outdir):
     except Exception as e:
         #logging.error(traceback.format_exc())
         print(e.message)
-
-file="/mnt/jlabDISK/hd5format_convert/1001_SNP_MATRIX/imputed_snps_binary.hdf5"
-out="/mnt/jlabDISK/hd5format_convert/1001_SNP_MATRIX/output"
-
-hdfTocsv(file,out)
